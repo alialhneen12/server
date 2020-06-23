@@ -1,0 +1,29 @@
+<? header('Content-Type: application/json');
+
+ $response = array();
+			 
+// هل يوجد تحديث ؟			 
+$response['value']=1;
+	
+// رسالة التنبيه		 	
+$response["msg"]="
+<b>
+
+What's new ?
+<br>
+1 -  Additions to the application  <br>
+2-  Version 1.0
+</b>
+";
+
+// Version New
+$response["version"]="1.0";
+
+
+
+ echo json_encode($response);
+
+
+
+
+?>
